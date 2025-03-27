@@ -1,0 +1,250 @@
+table Sales
+	lineageTag: 17d1dceb-91c3-45e5-aad0-fd97b53c0950
+
+	column 'Product ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4ff4f1bf-11c2-462d-b624-c7f5d3ea8be4
+		summarizeBy: count
+		sourceColumn: Product ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Category'
+		dataType: string
+		lineageTag: 33c86b96-110c-484c-8363-f2f3b4eaa80b
+		summarizeBy: none
+		sourceColumn: Product Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Subcategory'
+		dataType: string
+		lineageTag: 70a46467-751b-42c8-8b77-67db806268de
+		summarizeBy: none
+		sourceColumn: Product Subcategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Name'
+		dataType: string
+		lineageTag: 7905e675-013d-4254-b5e9-7e201bf5f26f
+		summarizeBy: none
+		sourceColumn: Product Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Description'
+		dataType: string
+		lineageTag: 08ecef3b-6dba-4197-a669-b0124fc42c2b
+		summarizeBy: none
+		sourceColumn: Product Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Price'
+		dataType: int64
+		formatString: 0
+		lineageTag: b408b5eb-6d14-4f50-bced-5b1c1848baee
+		summarizeBy: sum
+		sourceColumn: Product Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Weight'
+		dataType: int64
+		formatString: 0
+		lineageTag: bca092c2-cfdd-445c-a59b-71fd47f2f9ee
+		summarizeBy: sum
+		sourceColumn: Product Weight
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Size'
+		dataType: string
+		lineageTag: ebf7825f-1768-40cc-812f-a3256a561fa1
+		summarizeBy: none
+		sourceColumn: Product Size
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Region'
+		dataType: string
+		lineageTag: 73e9ca26-d8fd-413d-9ff8-4c6f3dc3f81c
+		summarizeBy: none
+		sourceColumn: Product Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Color'
+		dataType: string
+		lineageTag: 742a0d41-83cf-4329-92d2-8d623eccf2d9
+		summarizeBy: none
+		sourceColumn: Product Color
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Stock'
+		dataType: int64
+		formatString: 0
+		lineageTag: f6d44418-02e8-455f-8380-6471a3b2f3da
+		summarizeBy: sum
+		sourceColumn: Product Stock
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2dca5a5d-cd94-47cb-b773-cef113c193a3
+		summarizeBy: count
+		sourceColumn: Order ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 707c6c84-7d2e-481d-8602-076128bdd39e
+		summarizeBy: count
+		sourceColumn: Customer ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Name'
+		dataType: string
+		lineageTag: b5b31907-df04-4d78-b55e-d743022160ab
+		summarizeBy: none
+		sourceColumn: Customer Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Location'
+		dataType: string
+		lineageTag: 055e40b6-fa2f-4e90-ac7c-a9855362b830
+		summarizeBy: none
+		sourceColumn: Customer Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		dataType: int64
+		formatString: 0
+		lineageTag: e029a151-82d3-4b88-8cc6-2f5a2863cd2e
+		summarizeBy: sum
+		sourceColumn: Month Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: string
+		lineageTag: 9f47db7c-a172-43d6-977c-688fd5564e5b
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 30a286b4-76af-424d-b3fe-947206b57ee6
+		summarizeBy: none
+		sourceColumn: Order Date
+
+		variation Variation
+			isDefault
+			relationship: cfe53a14-f4a1-4a7f-8394-31aca271e507
+			defaultHierarchy: LocalDateTable_5389f2eb-c3a3-4017-b262-7f2e4c17f8c0.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Order Status'
+		dataType: string
+		lineageTag: 2446952f-622d-426d-90d1-615ca6fedc70
+		summarizeBy: none
+		sourceColumn: Order Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Quantity'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2dabfdea-60e1-4a3a-b1c7-b4c88198e3be
+		summarizeBy: sum
+		sourceColumn: Order Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Total'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1053c7bf-862a-418e-aea2-3ec78070caf4
+		summarizeBy: sum
+		sourceColumn: Order Total
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Payment Method'
+		dataType: string
+		lineageTag: 343d753c-b5e8-4032-bfc8-1479ac0328c4
+		summarizeBy: none
+		sourceColumn: Payment Method
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Shipping Method'
+		dataType: string
+		lineageTag: 731e0bfc-4d08-4eaf-ba5b-a12d097efe61
+		summarizeBy: none
+		sourceColumn: Shipping Method
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Shipping Time (in Days)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 69b9103b-0b07-4e89-8146-74f440551219
+		summarizeBy: sum
+		sourceColumn: Shipping Time (in Days)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estimated Delivery Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7c3a22a5-5e98-4563-bf7c-23d77811d314
+		summarizeBy: none
+		sourceColumn: Estimated Delivery Date
+
+		variation Variation
+			isDefault
+			relationship: f1fb9cb6-d5af-4203-a3c4-ad3d663548b8
+			defaultHierarchy: LocalDateTable_6cc44074-9bff-4f3c-891d-eaa9b6c610f1.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Customer Feedback'
+		dataType: string
+		lineageTag: 713c261e-7256-45c1-91c2-6139003f974f
+		summarizeBy: none
+		sourceColumn: Customer Feedback
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sales-7efbd8d5-54f1-40ee-964c-b77413aed7cb = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("\\Mac\Home\Documents\AdventureWorks-Sales-Feb-March-April.xlsx"), null, true),
+				    Sales_Sheet = Source{[Item="Sales",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sales_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Product ID", Int64.Type}, {"Product Category", type text}, {"Product Subcategory", type text}, {"Product Name", type text}, {"Product Description", type text}, {"Product Price", Int64.Type}, {"Product Weight", Int64.Type}, {"Product Size", type text}, {"Product Region", type text}, {"Product Color", type text}, {"Product Stock", Int64.Type}, {"Order ID", Int64.Type}, {"Customer ID", Int64.Type}, {"Customer Name", type text}, {"Customer Location", type text}, {"Month Number", Int64.Type}, {"Month", type text}, {"Order Date", type date}, {"Order Status", type text}, {"Order Quantity", Int64.Type}, {"Order Total", Int64.Type}, {"Payment Method", type text}, {"Shipping Method", type text}, {"Shipping Time (in Days)", Int64.Type}, {"Estimated Delivery Date", type date}, {"Customer Feedback", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,10 @@
+relationship cfe53a14-f4a1-4a7f-8394-31aca271e507
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Sales.'Order Date'
+	toColumn: LocalDateTable_5389f2eb-c3a3-4017-b262-7f2e4c17f8c0.Date
+
+relationship f1fb9cb6-d5af-4203-a3c4-ad3d663548b8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Sales.'Estimated Delivery Date'
+	toColumn: LocalDateTable_6cc44074-9bff-4f3c-891d-eaa9b6c610f1.Date
+
