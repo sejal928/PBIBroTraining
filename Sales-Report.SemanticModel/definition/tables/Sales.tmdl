@@ -1,6 +1,10 @@
 table Sales
 	lineageTag: 17d1dceb-91c3-45e5-aad0-fd97b53c0950
 
+	measure TotalProductPrice = SUMX(Sales,Sales[Product Stock] * Sales[Product Price])
+		formatString: 0
+		lineageTag: 5ce84afc-3b05-43c1-b749-3da0e98aebe7
+
 	column 'Product ID'
 		dataType: int64
 		formatString: 0
